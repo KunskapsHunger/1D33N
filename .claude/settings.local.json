@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(dir:*)",
+      "Bash(python scripts/extract_lyrics.py:*)",
+      "Bash(python:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(npm run build:*)",
+      "Bash(D:/projekt/1D33N/ffmpeg-8.0.1-essentials_build/bin/ffmpeg.exe:*)",
+      "Bash(npx tsc:*)",
+      "Bash(Get-Content \"D:\\\\projekt\\\\1D33N\\\\src\\\\assets\\\\lyrics\\\\Rösten.txt\" -Encoding UTF8)",
+      "Bash(powershell:*)",
+      "WebSearch",
+      "Bash(npm run dev:*)",
+      "Bash(del \"D:\\\\projekt\\\\1D33N\\\\scripts\\\\convert-videos-mobile.js\")",
+      "Bash(node scripts/compress-videos.js:*)",
+      "Bash(iconv:*)",
+      "Skill(transcribe)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}

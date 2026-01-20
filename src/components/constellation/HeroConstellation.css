@@ -1,0 +1,134 @@
+.hero-constellation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: default;
+  pointer-events: auto;
+}
+
+.hero-constellation.hovered {
+  cursor: pointer;
+}
+
+/* Connecting lines */
+.constellation-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.constellation-line {
+  stroke: rgba(220, 38, 38, 0.08);
+  stroke-width: 0.15;
+  opacity: 0;
+  animation: lineReveal 2s ease-out forwards;
+  transition: stroke 0.5s ease, stroke-width 0.3s ease;
+}
+
+.hero-constellation.hovered .constellation-line {
+  stroke: rgba(220, 38, 38, 0.25);
+  stroke-width: 0.2;
+}
+
+@keyframes lineReveal {
+  from {
+    opacity: 0;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  to {
+    opacity: 1;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Stars */
+.constellation-star {
+  position: absolute;
+  background: rgba(220, 38, 38, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: starAppear 1.5s ease-out forwards;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(220, 38, 38, 0.3);
+  pointer-events: none;
+}
+
+.hero-constellation.hovered .constellation-star {
+  background: rgba(220, 38, 38, 0.7);
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.5), 0 0 20px rgba(220, 38, 38, 0.2);
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.constellation-star.pulse {
+  animation: starAppear 1.5s ease-out forwards, starPulse 0.8s ease-in-out infinite;
+}
+
+@keyframes starAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes starPulse {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.8), 0 0 30px rgba(220, 38, 38, 0.4);
+  }
+}
+
+/* Hint indicator */
+.constellation-hint {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.constellation-hint.visible {
+  opacity: 1;
+}
+
+.hint-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.hint-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hint-dot.active {
+  background: var(--red);
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.6);
+}
+
+/* Disable on mobile - too subtle */
+@media (hover: none) and (pointer: coarse) {
+  .hero-constellation {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+.wiki-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  max-width: 100vw;
+  background: var(--black);
+  border-left: 1px solid var(--black-lighter);
+  z-index: 250;
+  transform: translateX(100%);
+  transition: transform var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.wiki-panel--open {
+  transform: translateX(0);
+}
+
+.wiki-panel-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-light);
+  border: 1px solid var(--black-lighter);
+  border-radius: 50%;
+  color: var(--white-dim);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.wiki-panel-close:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.wiki-panel-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+.wiki-panel-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--white-dim);
+  text-align: center;
+  font-style: italic;
+}
+
+.wiki-panel-references {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--black-lighter);
+}
+
+.wiki-references-title {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--white-dim);
+  margin-bottom: var(--space-sm);
+}
+
+.wiki-reference-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--black-light);
+  border: 1px solid var(--black-lighter);
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-xs);
+}
+
+.wiki-reference-link:hover {
+  border-color: var(--red);
+  background: var(--black-lighter);
+}
+
+.wiki-reference-track {
+  font-size: 0.9rem;
+}
+
+.wiki-reference-time {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--white-dim);
+}
+
+/* Mobile: Full width panel */
+@media (max-width: 480px) {
+  .wiki-panel {
+    width: 100vw;
+  }
+}

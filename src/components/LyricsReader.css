@@ -1,0 +1,592 @@
+.lyrics-reader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Close button */
+.reader-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-lighter);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.reader-close:hover {
+  background: var(--red);
+  border-color: var(--red);
+  transform: rotate(90deg);
+}
+
+.reader-close svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Header */
+.reader-header {
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.reader-title {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.reader-subtitle {
+  font-size: 0.875rem;
+  color: var(--white-dim);
+  margin-bottom: 1rem;
+}
+
+/* Mode toggle */
+.reader-mode-toggle {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  background: var(--black-lighter);
+  padding: 0.25rem;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.reader-mode-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white-dim);
+  border-radius: 6px;
+  transition: all var(--transition-base);
+}
+
+.reader-mode-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.reader-mode-btn:hover {
+  color: var(--white);
+}
+
+.reader-mode-btn.active {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Layout */
+.reader-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.reader-sidebar {
+  width: 320px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  overflow-y: auto;
+  padding: 1rem 0;
+}
+
+.reader-releases {
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-release {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.reader-release-btn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  text-align: left;
+  transition: all var(--transition-base);
+}
+
+.reader-release-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.reader-release-btn.active {
+  background: rgba(220, 38, 38, 0.1);
+  border-left: 3px solid var(--red);
+}
+
+.reader-release-type {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.reader-release-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.reader-release-year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--white-dim);
+}
+
+/* Track list */
+.reader-tracks {
+  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.reader-track-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  transition: all var(--transition-base);
+}
+
+.reader-track-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.reader-track-btn.active {
+  background: rgba(220, 38, 38, 0.15);
+  color: var(--red);
+}
+
+.reader-track-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--white-dim);
+  min-width: 1.5rem;
+}
+
+.reader-track-btn.active .reader-track-num {
+  color: var(--red);
+}
+
+.reader-track-title {
+  font-size: 0.9rem;
+}
+
+/* Main content */
+.reader-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-track-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.reader-current-track {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.reader-current-release {
+  font-size: 0.875rem;
+  color: var(--white-dim);
+}
+
+/* Lyrics */
+.reader-lyrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.reader-line {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--white-dim);
+  border-radius: 4px;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.reader-line:hover:not(:disabled) {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--white);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.reader-line.selected {
+  background: rgba(220, 38, 38, 0.2);
+  color: var(--white);
+  border-color: var(--red);
+}
+
+.reader-line.emphasis {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.reader-line:disabled {
+  cursor: default;
+}
+
+.reader-line-empty {
+  display: block;
+  height: 1rem;
+}
+
+.reader-emphasis {
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* Selectable lyrics (copy mode) */
+.reader-lyrics-selectable {
+  user-select: text;
+  cursor: text;
+}
+
+.reader-line-text {
+  padding: 0.4rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--white-dim);
+  margin: 0;
+}
+
+.reader-line-text.emphasis {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.reader-line-text::selection {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Empty state */
+.reader-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--white-dim);
+}
+
+.reader-empty-icon {
+  width: 64px;
+  height: 64px;
+  opacity: 0.3;
+}
+
+.reader-empty-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Preview overlay */
+.reader-preview-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.reader-preview {
+  position: relative;
+  background: var(--black-lighter);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reader-preview-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.reader-preview-close:hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.reader-preview-close svg {
+  width: 14px;
+  height: 14px;
+}
+
+.reader-preview-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.reader-preview-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.reader-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all var(--transition-base);
+}
+
+.reader-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.reader-btn-secondary {
+  background: var(--black-lighter);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.reader-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.reader-btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.reader-btn-primary:hover {
+  background: var(--red-glow);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+}
+
+.reader-btn-primary.success {
+  background: #16a34a;
+}
+
+.reader-btn-primary.success:hover {
+  background: #22c55e;
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.4);
+}
+
+.reader-btn-ghost {
+  background: transparent;
+  color: var(--white-dim);
+  padding: 0.75rem 1.25rem;
+}
+
+.reader-btn-ghost:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Line selection number */
+.reader-line {
+  position: relative;
+}
+
+.reader-line-number {
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+}
+
+/* Action bar */
+.reader-action-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(to top, var(--black) 0%, var(--black) 70%, transparent 100%);
+  padding: 2rem 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  animation: slideUpBar 0.3s ease;
+}
+
+@keyframes slideUpBar {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reader-action-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.reader-action-count {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.reader-action-label {
+  font-size: 0.875rem;
+  color: var(--white-dim);
+}
+
+.reader-action-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Adjust lyrics padding for action bar space */
+.reader-lyrics {
+  padding-bottom: 5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reader-layout {
+    flex-direction: column;
+  }
+
+  .reader-sidebar {
+    width: 100%;
+    max-height: 200px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .reader-content {
+    padding: 1rem;
+  }
+
+  .reader-line {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .reader-preview {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .reader-line {
+    padding-left: 2.5rem;
+  }
+
+  .reader-line-number {
+    left: 0.5rem;
+  }
+
+  .reader-action-bar {
+    padding: 1.5rem 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .reader-action-count {
+    font-size: 1.25rem;
+  }
+
+  .reader-action-label {
+    font-size: 0.75rem;
+  }
+}

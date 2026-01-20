@@ -1,0 +1,159 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countdown-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.countdown-units {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-unit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-value {
+  position: relative;
+  background: var(--black-lighter);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  min-width: 70px;
+  text-align: center;
+}
+
+.countdown-number {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.countdown-glitch {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red);
+  opacity: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  animation: countdownGlitch 3s infinite;
+}
+
+@keyframes countdownGlitch {
+  0%, 92%, 100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  93% {
+    opacity: 0.8;
+    transform: translate(-2px, 0);
+  }
+  94% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.6;
+    transform: translate(2px, 0);
+  }
+  96% {
+    opacity: 0;
+  }
+}
+
+.countdown-unit-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--white-dim);
+  text-align: center;
+  margin-top: 0.5rem;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.countdown-value {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.countdown-separator {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--red);
+  opacity: 0.5;
+  animation: separatorPulse 1s infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes separatorPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Complete state */
+.countdown-complete {
+  padding: 1.5rem 3rem;
+  background: linear-gradient(135deg, var(--red-dark), var(--red));
+  border-radius: 8px;
+  animation: completeGlow 2s infinite;
+}
+
+.countdown-complete-text {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--white);
+}
+
+@keyframes completeGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.8);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .countdown-value {
+    padding: 0.75rem 1rem;
+    min-width: 55px;
+  }
+
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+
+  .countdown-glitch {
+    font-size: 1.5rem;
+  }
+
+  .countdown-separator {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "title": "Sisyfos bror",
+  "language": "sv",
+  "duration": 234.9,
+  "lyrics": [
+    {
+      "time": 30.0,
+      "text": "Färre säger än ena sång, jag vill bara hem till dig på en gång",
+      "end": 33.1
+    },
+    {
+      "time": 33.1,
+      "text": "Var är det livet? Spela för spel, tårarna säger att allt var mitt fel",
+      "end": 37.0
+    },
+    {
+      "time": 39.6,
+      "text": "Frammenterade tankar hos poeter som bara snackar",
+      "end": 42.8
+    },
+    {
+      "time": 42.8,
+      "text": "Mediterande män fast i skiten är död, sängen knackar",
+      "end": 46.6
+    },
+    {
+      "time": 46.6,
+      "text": "Denna samma hermiten är fortfarande fast i sängen",
+      "end": 50.1
+    },
+    {
+      "time": 50.1,
+      "text": "Härmed neftiska tankar skor sig i mig på ängen",
+      "end": 53.5
+    },
+    {
+      "time": 53.5,
+      "text": "Det som har ett halvfärdigt tänkande är själva poängen",
+      "end": 57.5
+    },
+    {
+      "time": 57.5,
+      "text": "Frammenter som skapar en självande konsekvens",
+      "end": 60.8
+    },
+    {
+      "time": 60.8,
+      "text": "Bakgränden i hjärnan kapar ens landstans",
+      "end": 64.9
+    },
+    {
+      "time": 64.9,
+      "text": "Bakvägen till stjärnan och ängens sista vas",
+      "end": 68.3
+    },
+    {
+      "time": 68.3,
+      "text": "Eviös, längtan är såklart inget skor",
+      "end": 72.3
+    },
+    {
+      "time": 72.3,
+      "text": "Ansiktet mot marken är en gottig god",
+      "end": 75.6
+    },
+    {
+      "time": 75.6,
+      "text": "Det är tankar, som tankar nya tankar",
+      "end": 79.6
+    },
+    {
+      "time": 79.6,
+      "text": "Det är ord som föderopor",
+      "end": 82.8
+    },
+    {
+      "time": 82.8,
+      "text": "Bord är en evighetslop och på gruset utan skor",
+      "end": 86.7
+    },
+    {
+      "time": 86.7,
+      "text": "Jag måste vara sissifos bror",
+      "end": 90.0
+    },
+    {
+      "time": 90.7,
+      "text": "Sitter där igen, drömer om att bli kär igen",
+      "end": 94.5
+    },
+    {
+      "time": 94.5,
+      "text": "Hjärta söker atmosfär igen, vaknar upp och bara skär igen",
+      "end": 98.2
+    },
+    {
+      "time": 98.2,
+      "text": "Blodfyllda tårar inne ner längs med kinden",
+      "end": 101.9
+    },
+    {
+      "time": 101.9,
+      "text": "Sprängkilda kårar finner mig i sängs på vinden",
+      "end": 105.2
+    },
+    {
+      "time": 105.2,
+      "text": "Bordblömd efter alla år, finner inga ord och kan inte vara svår",
+      "end": 109.3
+    },
+    {
+      "time": 109.3,
+      "text": "Drömmer mig till en plats mellan dina låg",
+      "end": 113.0
+    },
+    {
+      "time": 113.0,
+      "text": "Strömfaller sakta i år, någonstans går en man i slaktare spår",
+      "end": 116.2
+    },
+    {
+      "time": 116.2,
+      "text": "Kritikerna sugar och bär ut mig på bor",
+      "end": 117.9
+    },
+    {
+      "time": 117.9,
+      "text": "Det som satt i såret med domen blir kall med åren",
+      "end": 119.7
+    },
+    {
+      "time": 119.7,
+      "text": "Det är jag som är dörren för att jag har försökt förstå det",
+      "end": 122.6
+    },
+    {
+      "time": 122.6,
+      "text": "Försökt begripade orimliga",
+      "end": 124.4
+    },
+    {
+      "time": 124.4,
+      "text": "Glömt bort allt det sinliga",
+      "end": 125.9
+    },
+    {
+      "time": 125.9,
+      "text": "Verkligheten stymmer life, sig över ruinen av staden",
+      "end": 128.9
+    },
+    {
+      "time": 128.9,
+      "text": "Som en haj som inte kan simma i djupet begrav",
+      "end": 131.5
+    },
+    {
+      "time": 131.5,
+      "text": "Jag låg någon gång i maj, sista gången jag såg dig live",
+      "end": 135.2
+    },
+    {
+      "time": 135.2,
+      "text": "Det var gången då allt blev en fight",
+      "end": 137.0
+    },
+    {
+      "time": 137.0,
+      "text": "Hjärtat fast i tongen allt blev tight",
+      "end": 138.8
+    },
+    {
+      "time": 138.8,
+      "text": "Som sista songen på väg till din gate",
+      "end": 141.0
+    },
+    {
+      "time": 141.0,
+      "text": "Should've known it was too late",
+      "end": 142.8
+    },
+    {
+      "time": 142.8,
+      "text": "As soon as you brought up fate",
+      "end": 144.3
+    },
+    {
+      "time": 145.4,
+      "text": "Det är tankar",
+      "end": 147.3
+    },
+    {
+      "time": 147.3,
+      "text": "Som tankar nya tankar är ord",
+      "end": 150.3
+    },
+    {
+      "time": 150.8,
+      "text": "Som föder od på or",
+      "end": 153.3
+    },
+    {
+      "time": 153.3,
+      "text": "En evighetslok",
+      "end": 154.3
+    },
+    {
+      "time": 155.0,
+      "text": "Gå på gruset utan skor",
+      "end": 156.9
+    },
+    {
+      "time": 156.9,
+      "text": "Jag måste vara sissifors bror",
+      "end": 159.3
+    },
+    {
+      "time": 160.8,
+      "text": "Alla sagor kommer att skälpa",
+      "end": 162.8
+    },
+    {
+      "time": 162.8,
+      "text": "Finns ingen mytologi som kan hjälpa",
+      "end": 164.7
+    },
+    {
+      "time": 164.7,
+      "text": "Hjältarna har låst heden i valvet",
+      "end": 166.4
+    },
+    {
+      "time": 166.4,
+      "text": "Att inte våga bli det råiska arvet",
+      "end": 168.7
+    },
+    {
+      "time": 168.7,
+      "text": "En man som sticker upp ur raskan",
+      "end": 170.7
+    },
+    {
+      "time": 170.7,
+      "text": "En man som stirrar där även raskar",
+      "end": 172.4
+    },
+    {
+      "time": 172.4,
+      "text": "Han missar allt viktigt när näven flaskar",
+      "end": 174.2
+    },
+    {
+      "time": 174.2,
+      "text": "Byta ljuvas, blända från det hem, brända ljua",
+      "end": 176.6
+    },
+    {
+      "time": 176.6,
+      "text": "En lön till sig själv är inte att ljuga",
+      "end": 178.5
+    },
+    {
+      "time": 178.5,
+      "text": "Sanningen kommer med uppsått förbjudas",
+      "end": 180.2
+    },
+    {
+      "time": 180.2,
+      "text": "Finns ingen som har förstått förutom ljudas",
+      "end": 182.7
+    },
+    {
+      "time": 182.7,
+      "text": "Tidningen sista tankar",
+      "end": 184.2
+    },
+    {
+      "time": 184.8,
+      "text": "Förgås till klotter",
+      "end": 186.5
+    },
+    {
+      "time": 186.5,
+      "text": "Jag är blicken från Agamemnon",
+      "end": 188.3
+    },
+    {
+      "time": 188.3,
+      "text": "När han offrar sin dotter",
+      "end": 190.2
+    },
+    {
+      "time": 192.9,
+      "text": "En evighetslok",
+      "end": 194.1
+    },
+    {
+      "time": 194.1,
+      "text": "Tänk på att sluta tänka",
+      "end": 197.2
+    },
+    {
+      "time": 197.9,
+      "text": "Önskar att få sluta längta",
+      "end": 201.0
+    },
+    {
+      "time": 201.0,
+      "text": "Men jag ångrar aldrig att jag alltid ångrar allt",
+      "end": 204.8
+    },
+    {
+      "time": 204.8,
+      "text": "Det är tankar",
+      "end": 206.3
+    },
+    {
+      "time": 207.0,
+      "text": "Som tankar nya tankar är ord",
+      "end": 209.7
+    },
+    {
+      "time": 209.7,
+      "text": "Som föder ord på",
+      "end": 211.8
+    },
+    {
+      "time": 211.8,
+      "text": "Orden är evighetslok",
+      "end": 214.0
+    },
+    {
+      "time": 214.0,
+      "text": "Går på kluset utan skor",
+      "end": 215.9
+    },
+    {
+      "time": 215.9,
+      "text": "Jag måste vara Sisyphos bror",
+      "end": 219.3
+    },
+    {
+      "time": 231.0,
+      "text": "Mm, mm, mm, mm, mm, mm, mm",
+      "end": 234.9
+    }
+  ],
+  "full_text": " Färre säger än ena sång, jag vill bara hem till dig på en gång Var är det livet? Spela för spel, tårarna säger att allt var mitt fel Frammenterade tankar hos poeter som bara snackar Mediterande män fast i skiten är död, sängen knackar Denna samma hermiten är fortfarande fast i sängen Härmed neftiska tankar skor sig i mig på ängen Det som har ett halvfärdigt tänkande är själva poängen Frammenter som skapar en självande konsekvens Bakgränden i hjärnan kapar ens landstans Bakvägen till stjärnan och ängens sista vas Eviös, längtan är såklart inget skor Ansiktet mot marken är en gottig god Det är tankar, som tankar nya tankar Det är ord som föderopor Bord är en evighetslop och på gruset utan skor Jag måste vara sissifos bror Sitter där igen, drömer om att bli kär igen Hjärta söker atmosfär igen, vaknar upp och bara skär igen Blodfyllda tårar inne ner längs med kinden Sprängkilda kårar finner mig i sängs på vinden Bordblömd efter alla år, finner inga ord och kan inte vara svår Drömmer mig till en plats mellan dina låg Strömfaller sakta i år, någonstans går en man i slaktare spår Kritikerna sugar och bär ut mig på bor Det som satt i såret med domen blir kall med åren Det är jag som är dörren för att jag har försökt förstå det Försökt begripade orimliga Glömt bort allt det sinliga Verkligheten stymmer life, sig över ruinen av staden Som en haj som inte kan simma i djupet begrav Jag låg någon gång i maj, sista gången jag såg dig live Det var gången då allt blev en fight Hjärtat fast i tongen allt blev tight Som sista songen på väg till din gate Should've known it was too late As soon as you brought up fate Det är tankar Som tankar nya tankar är ord Som föder od på or En evighetslok Gå på gruset utan skor Jag måste vara sissifors bror Alla sagor kommer att skälpa Finns ingen mytologi som kan hjälpa Hjältarna har låst heden i valvet Att inte våga bli det råiska arvet En man som sticker upp ur raskan En man som stirrar där även raskar Han missar allt viktigt när näven flaskar Byta ljuvas, blända från det hem, brända ljua En lön till sig själv är inte att ljuga Sanningen kommer med uppsått förbjudas Finns ingen som har förstått förutom ljudas Tidningen sista tankar Förgås till klotter Jag är blicken från Agamemnon När han offrar sin dotter En evighetslok Tänk på att sluta tänka Önskar att få sluta längta Men jag ångrar aldrig att jag alltid ångrar allt Det är tankar Som tankar nya tankar är ord Som föder ord på Orden är evighetslok Går på kluset utan skor Jag måste vara Sisyphos bror Mm, mm, mm, mm, mm, mm, mm"
+}

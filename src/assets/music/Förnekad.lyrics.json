@@ -1,0 +1,373 @@
+{
+  "title": "Förnekad",
+  "language": "sv",
+  "duration": 224.9,
+  "lyrics": [
+    {
+      "time": 12.5,
+      "text": "Lyrics",
+      "end": 13.1
+    },
+    {
+      "time": 13.1,
+      "text": "När alla ser på er glad och vaken",
+      "end": 24.4
+    },
+    {
+      "time": 24.4,
+      "text": "Men hon anter sveper mörkret in över staden",
+      "end": 27.8
+    },
+    {
+      "time": 27.8,
+      "text": "Ögonen spända upp i taket",
+      "end": 29.8
+    },
+    {
+      "time": 29.8,
+      "text": "Där är vad som händer när man kör ända in i kaklet",
+      "end": 32.8
+    },
+    {
+      "time": 32.8,
+      "text": "Har alltid spänd bågen hårt",
+      "end": 34.4
+    },
+    {
+      "time": 34.4,
+      "text": "Aldrig känt något svårt",
+      "end": 35.8
+    },
+    {
+      "time": 35.8,
+      "text": "Tills du erkänd och såg att det som var vår",
+      "end": 38.5
+    },
+    {
+      "time": 38.5,
+      "text": "Jag ville ge dig en modersinsyr",
+      "end": 41.5
+    },
+    {
+      "time": 41.5,
+      "text": "Istället växen mordisk instinkt",
+      "end": 44.1
+    },
+    {
+      "time": 46.1,
+      "text": "Allt jag ger blir allt jag förlorat",
+      "end": 47.8
+    },
+    {
+      "time": 47.8,
+      "text": "Och sett all jag förkorat blir det eld och förkona",
+      "end": 50.6
+    },
+    {
+      "time": 51.6,
+      "text": "Jag ber till givlen",
+      "end": 53.5
+    },
+    {
+      "time": 53.5,
+      "text": "Allting som kräta gjort mig delse",
+      "end": 56.6
+    },
+    {
+      "time": 57.2,
+      "text": "Vet du vad du vill sen",
+      "end": 58.9
+    },
+    {
+      "time": 58.9,
+      "text": "Cause I would do anything I can",
+      "end": 61.8
+    },
+    {
+      "time": 61.8,
+      "text": "But now I breathe and count to ten",
+      "end": 64.7
+    },
+    {
+      "time": 65.4,
+      "text": "You chose to become the villain",
+      "end": 68.1
+    },
+    {
+      "time": 68.1,
+      "text": "Need to reach the bottom before it all upends",
+      "end": 71.0
+    },
+    {
+      "time": 71.0,
+      "text": "No spiderman until they kill",
+      "end": 72.9
+    },
+    {
+      "time": 74.9,
+      "text": "Uncle Ben",
+      "end": 76.3
+    },
+    {
+      "time": 76.3,
+      "text": "Du ville göra allt för mig",
+      "end": 79.1
+    },
+    {
+      "time": 79.1,
+      "text": "Men inte ber att du gör något för oss",
+      "end": 81.8
+    },
+    {
+      "time": 81.8,
+      "text": "Du gjorde en boss en koloss",
+      "end": 84.2
+    },
+    {
+      "time": 84.2,
+      "text": "Till en man som inte vågar slås",
+      "end": 87.0
+    },
+    {
+      "time": 87.0,
+      "text": "Jag har sett in i avgrunden",
+      "end": 89.0
+    },
+    {
+      "time": 89.6,
+      "text": "Sett allting falla ut",
+      "end": 91.9
+    },
+    {
+      "time": 91.9,
+      "text": "Tappat allt samma sekunder",
+      "end": 94.0
+    },
+    {
+      "time": 94.8,
+      "text": "Hört skriken ropa ut",
+      "end": 97.1
+    },
+    {
+      "time": 97.1,
+      "text": "Aldrig kände mig så försvunnen",
+      "end": 99.4
+    },
+    {
+      "time": 100.1,
+      "text": "Behöver hjälpte jag till",
+      "end": 102.7
+    },
+    {
+      "time": 102.7,
+      "text": "Behöver skrika men håller för munnen",
+      "end": 105.2
+    },
+    {
+      "time": 106.0,
+      "text": "Vart är du nu?",
+      "end": 107.1
+    },
+    {
+      "time": 120.4,
+      "text": "Du flyger saker i rummet nu",
+      "end": 123.3
+    },
+    {
+      "time": 123.3,
+      "text": "Ilskan har släppts ur sin bur",
+      "end": 125.4
+    },
+    {
+      "time": 125.4,
+      "text": "Inget annat få plats här inne nu",
+      "end": 128.1
+    },
+    {
+      "time": 128.1,
+      "text": "Hade du varit här hade din tid varit slut",
+      "end": 131.2
+    },
+    {
+      "time": 131.2,
+      "text": "Du behandlar mig som en naskål",
+      "end": 134.3
+    },
+    {
+      "time": 134.3,
+      "text": "Här får cigarrer längs med min krok",
+      "end": 136.4
+    },
+    {
+      "time": 136.4,
+      "text": "När du kollar på andra vill allting mer sätta stopp",
+      "end": 139.1
+    },
+    {
+      "time": 139.1,
+      "text": "Spola ner en stanna och tårarna i mitt avlopp",
+      "end": 141.8
+    },
+    {
+      "time": 141.8,
+      "text": "Du kanske trodde att jag var stolt",
+      "end": 144.2
+    },
+    {
+      "time": 144.2,
+      "text": "",
+      "end": 144.2
+    },
+    {
+      "time": 144.2,
+      "text": "",
+      "end": 144.2
+    },
+    {
+      "time": 144.2,
+      "text": "Du visste inte att hela du var sångkna",
+      "end": 147.1
+    },
+    {
+      "time": 147.1,
+      "text": "Du kanske trodde att min hud var back",
+      "end": 149.6
+    },
+    {
+      "time": 149.6,
+      "text": "Du visste inte att jag skriven i varenda ord på öv",
+      "end": 152.8
+    },
+    {
+      "time": 153.4,
+      "text": "Jag måste förgöra",
+      "end": 155.4
+    },
+    {
+      "time": 156.1,
+      "text": "Jag måste förstöra",
+      "end": 158.4
+    },
+    {
+      "time": 159.3,
+      "text": "Men jag kan inte skada dig",
+      "end": 161.7
+    },
+    {
+      "time": 161.7,
+      "text": "Så jag måste skada mig",
+      "end": 163.8
+    },
+    {
+      "time": 164.9,
+      "text": "En film till",
+      "end": 166.0
+    },
+    {
+      "time": 166.0,
+      "text": "Ett sorg till",
+      "end": 167.3
+    },
+    {
+      "time": 167.3,
+      "text": "En sekund till",
+      "end": 168.9
+    },
+    {
+      "time": 170.1,
+      "text": "Och jag känner äntligen allting",
+      "end": 172.2
+    },
+    {
+      "time": 172.2,
+      "text": "Jag har sett in i avgrunden",
+      "end": 174.9
+    },
+    {
+      "time": 174.9,
+      "text": "Sett allting falla ut",
+      "end": 177.3
+    },
+    {
+      "time": 177.3,
+      "text": "Tappat allt samma sekunder",
+      "end": 180.1
+    },
+    {
+      "time": 180.1,
+      "text": "Hörskriken ropar ut",
+      "end": 182.7
+    },
+    {
+      "time": 182.7,
+      "text": "Aldrig känner mig så försvunnen",
+      "end": 184.4
+    },
+    {
+      "time": 185.5,
+      "text": "Behöver hjälp till akut",
+      "end": 188.0
+    },
+    {
+      "time": 188.0,
+      "text": "Behöver skrika men håller för munnen",
+      "end": 190.4
+    },
+    {
+      "time": 191.3,
+      "text": "Vad är du nu?",
+      "end": 192.4
+    },
+    {
+      "time": 194.2,
+      "text": "Vad är du nu?",
+      "end": 195.6
+    },
+    {
+      "time": 196.5,
+      "text": "Baby vad är du nu?",
+      "end": 198.7
+    },
+    {
+      "time": 203.8,
+      "text": "Jag har sett in i avgrunden",
+      "end": 206.8
+    },
+    {
+      "time": 206.8,
+      "text": "Sett allting falla ut",
+      "end": 209.3
+    },
+    {
+      "time": 209.3,
+      "text": "Tappat allt samma sekunder",
+      "end": 212.2
+    },
+    {
+      "time": 212.2,
+      "text": "Hörskriken ropar ut",
+      "end": 214.6
+    },
+    {
+      "time": 214.6,
+      "text": "Aldrig känner mig så försvunnen",
+      "end": 217.5
+    },
+    {
+      "time": 217.5,
+      "text": "Behöver hjälp till akut",
+      "end": 220.0
+    },
+    {
+      "time": 220.0,
+      "text": "Behöver skrika men håller för munnen",
+      "end": 223.3
+    },
+    {
+      "time": 223.3,
+      "text": "Vad är du nu?",
+      "end": 224.9
+    }
+  ],
+  "full_text": " Lyrics När alla ser på er glad och vaken Men hon anter sveper mörkret in över staden Ögonen spända upp i taket Där är vad som händer när man kör ända in i kaklet Har alltid spänd bågen hårt Aldrig känt något svårt Tills du erkänd och såg att det som var vår Jag ville ge dig en modersinsyr Istället växen mordisk instinkt Allt jag ger blir allt jag förlorat Och sett all jag förkorat blir det eld och förkona Jag ber till givlen Allting som kräta gjort mig delse Vet du vad du vill sen Cause I would do anything I can But now I breathe and count to ten You chose to become the villain Need to reach the bottom before it all upends No spiderman until they kill Uncle Ben Du ville göra allt för mig Men inte ber att du gör något för oss Du gjorde en boss en koloss Till en man som inte vågar slås Jag har sett in i avgrunden Sett allting falla ut Tappat allt samma sekunder Hört skriken ropa ut Aldrig kände mig så försvunnen Behöver hjälpte jag till Behöver skrika men håller för munnen Vart är du nu? Du flyger saker i rummet nu Ilskan har släppts ur sin bur Inget annat få plats här inne nu Hade du varit här hade din tid varit slut Du behandlar mig som en naskål Här får cigarrer längs med min krok När du kollar på andra vill allting mer sätta stopp Spola ner en stanna och tårarna i mitt avlopp Du kanske trodde att jag var stolt Du visste inte att hela du var sångkna Du kanske trodde att min hud var back Du visste inte att jag skriven i varenda ord på öv Jag måste förgöra Jag måste förstöra Men jag kan inte skada dig Så jag måste skada mig En film till Ett sorg till En sekund till Och jag känner äntligen allting Jag har sett in i avgrunden Sett allting falla ut Tappat allt samma sekunder Hörskriken ropar ut Aldrig känner mig så försvunnen Behöver hjälp till akut Behöver skrika men håller för munnen Vad är du nu? Vad är du nu? Baby vad är du nu? Jag har sett in i avgrunden Sett allting falla ut Tappat allt samma sekunder Hörskriken ropar ut Aldrig känner mig så försvunnen Behöver hjälp till akut Behöver skrika men håller för munnen Vad är du nu?"
+}

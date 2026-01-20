@@ -1,0 +1,163 @@
+.about {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(to bottom, var(--black), var(--black-light));
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-image {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--black-lighter), var(--black));
+  border: 1px solid var(--red-dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(220, 38, 38, 0.1),
+    transparent,
+    rgba(220, 38, 38, 0.1),
+    transparent
+  );
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, rgba(220, 38, 38, 0.1));
+}
+
+.about-image-text {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  opacity: 0.1;
+  position: relative;
+  z-index: 1;
+}
+
+.about-decoration {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-dec-line {
+  width: 60px;
+  height: 2px;
+  background: var(--red);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.about-content {
+  animation: slideUp 0.8s ease-out;
+}
+
+.about-text {
+  margin-bottom: var(--space-xl);
+}
+
+.about-text p {
+  margin-bottom: var(--space-md);
+  color: var(--white-dim);
+  line-height: 1.8;
+}
+
+.about-text strong {
+  color: var(--white);
+}
+
+.about-text em {
+  color: var(--red);
+  font-style: normal;
+}
+
+.about-quote {
+  margin-bottom: var(--space-xl);
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--red);
+}
+
+.about-quote blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-mono);
+}
+
+.about-quote cite {
+  font-size: 0.85rem;
+  color: var(--red);
+  font-style: normal;
+}
+
+.about-stats {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white-dim);
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .about-visual {
+    order: -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

@@ -25,6 +25,9 @@ import { kalkOchLera } from './entries/kalk-och-lera';
 import { solidaritet } from './entries/solidaritet';
 import { bockerOmStoraMan } from './entries/bocker-om-stora-man';
 import { soundOfSilence } from './entries/sound-of-silence';
+import { narcissus } from './entries/narcissus';
+import { sirenerna } from './entries/sirenerna';
+import { sanktPeter } from './entries/sankt-peter';
 
 // Export all entries as array
 export const wikiEntries: WikiEntry[] = [
@@ -51,6 +54,9 @@ export const wikiEntries: WikiEntry[] = [
   solidaritet,
   bockerOmStoraMan,
   soundOfSilence,
+  narcissus,
+  sirenerna,
+  sanktPeter,
 ];
 
 // Get entry by ID
@@ -131,3 +137,6 @@ export { kalkOchLera } from './entries/kalk-och-lera';
 export { solidaritet } from './entries/solidaritet';
 export { bockerOmStoraMan } from './entries/bocker-om-stora-man';
 export { soundOfSilence } from './entries/sound-of-silence';
+export { narcissus } from './entries/narcissus';
+export { sirenerna } from './entries/sirenerna';
+export { sanktPeter } from './entries/sankt-peter';

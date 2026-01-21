@@ -10,6 +10,7 @@ import { drakar } from './drakar';
 import { farOchJag } from './far-och-jag';
 import { artificiell } from './artificiell';
 import { morkret } from './morkret';
+import { narcissiusBroder } from './narcissius-broder';
 
 export const ingaSkuggorUtanLjus: Release = {
   id: 'skuggor-och-ljus',
@@ -29,8 +30,9 @@ export const ingaSkuggorUtanLjus: Release = {
     farOchJag,
     morkret,
     artificiell,
+    narcissiusBroder,
   ].sort((a, b) => (a.trackNumber ?? 0) - (b.trackNumber ?? 0))
 };
 
 // Re-export individual tracks for direct access
-export { sisyfosBror, fornekad, medierad, heroine, narhet, rosten, drakar, farOchJag, artificiell, morkret };
+export { sisyfosBror, fornekad, medierad, heroine, narhet, rosten, drakar, farOchJag, artificiell, morkret, narcissiusBroder };
